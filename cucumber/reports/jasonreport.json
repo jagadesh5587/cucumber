@@ -1,0 +1,78 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 14,
+        "name": "login to fb page2",
+        "description": "",
+        "id": "verify-fb-login;login-to-fb-page2;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 36963653000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "launch fb url",
+            "match": {
+              "location": "OpenFb.launch_fb_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1520709800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "enter \"jagan\" and \"hari\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "jagan",
+                  "offset": 7
+                },
+                {
+                  "val": "hari",
+                  "offset": 19
+                }
+              ],
+              "location": "OpenFb.enter_and(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1151761400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "click login",
+            "match": {
+              "location": "OpenFb.click_login()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 7,
+            "name": "@positive"
+          }
+        ]
+      }
+    ],
+    "name": "verify fb login",
+    "description": "",
+    "id": "verify-fb-login",
+    "keyword": "Feature",
+    "uri": "feature/fb.feature"
+  }
+]
